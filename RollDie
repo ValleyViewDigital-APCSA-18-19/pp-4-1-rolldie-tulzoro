@@ -1,0 +1,13 @@
+package pac;
+import java.util.Scanner;
+
+public class RollDie {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		
+		System.out.print("Input the number of sides that the dice has: ");
+		Die dice = new Die(kb.nextInt());
+		
+		System.out.print(dice);
+	}
+}
