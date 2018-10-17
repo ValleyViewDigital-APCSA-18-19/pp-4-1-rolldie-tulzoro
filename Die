@@ -1,0 +1,19 @@
+package pac;
+
+public class Die{ 
+	private int sides;
+
+	public Die(int sides) {
+		this.sides=sides;
+		roll(sides);
+	}
+	
+	public double roll(int sides) {
+		return (Math.random() * this.sides);
+	}
+	
+	public String toString() {
+		String num = "Number: " + ((int)roll(sides)+1);
+		return num;
+	}
+}
